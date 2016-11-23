@@ -8,8 +8,8 @@ Class Template {
 
 	function __construct($layouts, $controllerName) {
 		$this->layouts = $layouts;
-		$arr = explode("_", $controllerName);
-		$this->controller = strtolower($arr[1]);
+		
+		$this->controller = $controllerName;
 	}
 
 	// установка переменных, для отображения
@@ -23,22 +23,24 @@ Class Template {
 
 	// Отображение
 	function view($name) {
-		$pathLayout = SITE_PATH . "/views/layouts/" . $this->layouts . ".php";
-		$contentPage = SITE_PATH . "/views/" . $this->controller . "/" . $name . ".php";
-
+		//$layoutFolder = lcfirst(explode("_", $this->controller)[1]); // Имя_Контроллера -> Имя Контроллера -> контроллера
+		//$pathLayout = SITE_PATH . "/views/" . $layoutFolder . "/" . $this->layouts . ".php";
+		$pathLayout = SITE_PATH . "/views/" . $this->layouts . "/" . $name . ".php";
+		//$contentPage = SITE_PATH . "/views/" . $this->controller . "/" . $name . ".php";
+		
 		if (file_exists($pathLayout) == false) {
 			trigger_error("Layout `" . $this->layouts . "` does not exist.", E_USER_NOTICE);
 			return false;
 		}
-		if (file_exists($contentPage) == false) {
+		/*if (file_exists($contentPage) == false) {
 			trigger_error("Template `" . $name . "` does not exist.", E_USER_NOTICE);
 			return false;
-		}
+		}*/
 
 		foreach ($this->vars as $key => $value) {
 			$$key = $value;
 		}
 
-		include($pathLayout);
+		require_once($pathLayout);
 	} 
 }

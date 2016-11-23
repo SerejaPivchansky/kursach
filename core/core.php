@@ -33,7 +33,3 @@ function __autoload($className) {
 	// Подключаем файл с классом
 	include ($file);
 }
-
-// Запуск реестра
-
-$registry = new Registry;

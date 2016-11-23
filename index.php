@@ -2,7 +2,7 @@
 
 error_reporting(E_ALL); // Отображение всех ошибок
 
-include("config.php");
+require_once("config.php");
 
 
 try {
@@ -16,12 +16,10 @@ try {
 	print $e->getMessage();
 }
 
-include(SITE_PATH . "/core/core.php");
+require_once(SITE_PATH . "/core/core.php");
 
 // Загружаем router
-$router = new Router($registry);
-// записываем данные в реестр
-$registry->set("router", $router);
+$router = new Router();
 // задаем путь до папки контроллеров.
 $router->setPath(SITE_PATH . "/controllers");
 // запускаем маршрутизатор
