@@ -5,12 +5,13 @@ Class Controller_Pricing extends Controller_Base{
 	public $layouts = "pricing";
 
 	public function index() {
-		if (!empty($_POST["radio"]) && $_POST["radio"] != "plastic") {
-			$this->stepThree();
-			return;
-		} else {
-			$this->steptwo();
+
+
+		if ($step = "two") {
+			return $this->stepOne();
 		}
+
+		
 		//$this->template->view("index");
 	}
 
@@ -19,9 +20,17 @@ Class Controller_Pricing extends Controller_Base{
 	}
 
 	public function stepTwo() {
-		$this->template->view("steptwo");
+		if (!empty($_POST["radio"]) && $_POST["radio"] != "plastic") {
+			$this->stepThree();
+			return;
+		} else {
+			$this->template->view("steptwo");
+			return;
+		}
+		
 	}
 	public function stepThree() {
-		$this->template->view("stepthree");
+		//$this->template->view("stepthree");
+		
 	}
 }

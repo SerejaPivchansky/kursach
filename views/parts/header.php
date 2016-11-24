@@ -5,14 +5,17 @@
     <title>E-SHOPPER</title>
     <link href="<?php SITE_PATH?>/template/css/main.css" rel="stylesheet">
     <script src="<?php SITE_PATH?>/template/js/jquery.js"></script>
+    <script src="<?php SITE_PATH?>/template/js/FormStyler/jquery.formstyler.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="<?php SITE_PATH?>/template/js/FormStyler/jquery.formstyler.css" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <body>
 <div id="wrapper">
 <header id="header">
     <div class="header_top">
         <ul class="header_top_nav_1">
-            <li><a href="#">093-077-34-78</a></li>
-            <li><a href="#">Email: oleg.lysenko.1993@gmail.com</a></li>
+            <li><a href="#">8-800-555-35-35</a></li>
+            <li><a href="#">Email: mistakovalev@gmail.com</a></li>
         </ul>
         <ul class="header_top_nav_2">
             <li><a href="#">FB</a></li>

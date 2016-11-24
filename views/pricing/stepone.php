@@ -24,14 +24,14 @@ require_once(SITE_PATH . "/views/parts/header.php");
 			</a>
 		</div>
 		<div class="step-container">
-	        <form action="/pricing" id="form" method="POST" novalidate="novalidate">
+	        <form action="/pricing/steptwo" id="form" method="POST" novalidate="novalidate">
 			<h2>Выберите свой вариант остекления</h2>
 	        <div class="error"></div>
 			<div class="glazings-selector ajustblock">
 				<div class="glazing">
 					<div class="glazing-title">
 						<!-- <label><div id="step_plastic-styler" class="jq-radio checked" unselectable="on" style="user-select: none; display: inline-block; position: relative;"><input type="radio" name="glazing" id="step_plastic" value="plastic" checked="checked" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-radio__div"></div></div>Пластиковые<br>Окна</label> -->
-						<input type="radio" id="plastic" name="radio" value="plastic" class="radio" />
+						<input type="radio" id="plastic" name="radio" value="plastic" class="radio" checked="checked" />
 						<label for="plastic">Пластиковые<br>окна</label>
 					</div>
 					<label class="step_one_img" for="step_plastic"><img src="<?php SITE_PATH?>/template/images/window-plastic.png" alt=""></label>

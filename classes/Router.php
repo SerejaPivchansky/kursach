@@ -79,7 +79,7 @@ Class Router {
 		// Создаём экземпляр контроллера
 		$class = "Controller_" . $controller;
 		$controller = new $class();
-
+		
 		// Если экшен не существует - 404
 		if (is_callable(array($controller, $action)) == false) {
 			die ("404 Not Found");

@@ -25,7 +25,7 @@ require_once(SITE_PATH . "/views/parts/header.php");
 			</a>
 		</div>
 	<div class="step-container">
-        <form action="/pricing" id="form" method="POST" novalidate="novalidate">
+        <form action="/pricing/stepthree" id="form" method="POST" novalidate="novalidate">
 		<div>
 			<div style="float: left; margin-right: 35px;">
 				<img src="<?php SITE_PATH?>/template/images/veka-windows.png" width="227" height="191" title="Îêíà VEKA">
@@ -50,21 +50,25 @@ require_once(SITE_PATH . "/views/parts/header.php");
                     Ширина профиля 58 мм.<br>Три воздушные камеры в профиле. 2-х камерный стеклопакет 32 мм. 
 				</p>
 				<label>
-					<div id="profile_euroline-styler" class="jq-radio checked" unselectable="on" style="user-select: none; display: inline-block; position: relative;"><input type="radio" id="profile_euroline" name="profile" value="euroline" checked="checked" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-radio__div"></div></div>
+					<!-- <div id="profile_euroline-styler" class="jq-radio checked" unselectable="on" style="user-select: none; display: inline-block; position: relative;"><input type="radio" id="profile_euroline" name="profile" value="euroline" checked="checked" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-radio__div"></div></div> -->
+					<input type="radio" id="profile_euroline" name="radio" value="profile_euroline" class="radio" checked="checked" />
+					<label for="profile_euroline" style="width: 0"></label>
 					<span>Выбрать</span>
 				</label>
 			
 			</label>
-            			<label class="plastic-windows-profile" for="profile_softline">
+            <label class="plastic-windows-profile" for="profile_softline">
 			<div class="veka_logo_img"></div>
 				<p class="profile-title">Softline</p>
 				<img src="<?php SITE_PATH?>/template/images/window_comfort.jpg" width="147" title="Ïðîôèëü Softline" alt="">
 				<p class="profile-description">
-                    Øèðèíà ïðîôèëÿ 70 ìì.<br>Ïÿòü âîçäóøíûõ êàìåð â ïðîôèëå. 2-õ êàìåðíûé ñòåêëîïàêåò 36 ìì.
+                    Ширина профиля 70 мм.<br>Пять воздушных камер в профиле. 2-х камерный стеклопакет 36 мм.
 				</p>
 				<label>
-					<div id="profile_softline-styler" class="jq-radio" unselectable="on" style="user-select: none; display: inline-block; position: relative;"><input type="radio" id="profile_softline" name="profile" value="softline" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-radio__div"></div></div>
-					<span>Âûáðàòü</span>
+					<!-- <div id="profile_softline-styler" class="jq-radio" unselectable="on" style="user-select: none; display: inline-block; position: relative;"><input type="radio" id="profile_softline" name="profile" value="softline" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-radio__div"></div></div> -->
+					<input type="radio" id="profile_softline" name="radio" value="profile_softline" class="radio" />
+					<label for="profile_softline" style="width: 0"></label>
+					<span>Выбрать</span>
 				</label>
 			
 			</label>
@@ -73,11 +77,13 @@ require_once(SITE_PATH . "/views/parts/header.php");
 				<p class="profile-title">Softline82</p>
 				<img src="<?php SITE_PATH?>/template/images/window_premium.jpg" width="147" title="Ïðîôèëü Softline82" alt="">
 				<p class="profile-description">
-                    Øèðèíà ïðîôèëÿ 82 ìì.<br>Ñåìü âîçäóøíûõ êàìåð â ïðîôèëå. 2-õ êàìåðíûé ñòåêëîïàêåò 36 ìì.
+                    Ширина профиля 82 мм.<br>Семь воздушных камер в профиле. 2-х камерный стеклопакет.
 				</p>
 				<label>
-					<div id="profile_softline82-styler" class="jq-radio" unselectable="on" style="user-select: none; display: inline-block; position: relative;"><input type="radio" id="profile_softline82" name="profile" value="softline82" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-radio__div"></div></div>
-					<span>Âûáðàòü</span>
+					<!-- <div id="profile_softline82-styler" class="jq-radio" unselectable="on" style="user-select: none; display: inline-block; position: relative;"><input type="radio" id="profile_softline82" name="profile" value="softline82" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-radio__div"></div></div> -->
+					<input type="radio" id="profile_softline82" name="radio" value="profile_softline82" class="radio" />
+					<label for="profile_softline82" style="width: 0"></label>
+					<span>Выбрать</span>
 				</label>
 			
 			</label>
@@ -85,8 +91,8 @@ require_once(SITE_PATH . "/views/parts/header.php");
 		</div>
 		<input type="hidden" name="forward" value="Ñëåäóþùèé øàã">
 		<div class="next-prev-wrapper">
-            <a class="step-button prev" href="http://www.oknarosta.ru/calc/?backwards=true">Ïðåäûäóùèé øàã</a>
-            <input type="submit" name="forward" class="step-button next" value="Ñëåäóþùèé øàã">		</div>
+            <a class="step-button prev" href="/pricing/stepone">< Предыдущий шаг</a>
+            <input type="submit" name="forward" class="step-button next" value="Следующий шаг >">		</div>
         </form>
 	</div>
 	</div>

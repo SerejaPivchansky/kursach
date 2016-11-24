@@ -1,5 +1,5 @@
 <?php
-include (ROOT . '/views/parts/header.php');
+include (SITE_PATH . '/views/parts/header.php');
 ?>
 
 <section>
@@ -23,5 +23,5 @@ include (ROOT . '/views/parts/header.php');
 </section>
 <div class="appendix"></div>
 <?php
-include (ROOT . '/views/parts/footer.php');
+include (SITE_PATH . '/views/parts/footer.php');
 ?>
