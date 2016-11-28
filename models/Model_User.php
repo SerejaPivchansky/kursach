@@ -9,8 +9,6 @@ Class Model_User extends Model_Base {
 		$sql = "INSERT INTO users (name, email, password)
 			VALUES(:name, :email, :password)";
 
-		$pdo->prepare($sql);
-
 		$res = $pdo->prepare($sql);
 
 		$res->bindParam(":name", $name, PDO::PARAM_STR);
@@ -56,7 +54,7 @@ Class Model_User extends Model_Base {
 		$res = $pdo->prepare($sql);
 		$res->bindParam(":email", $email, PDO::PARAM_STR);
 		$res->execute();
-		var_dump($res->fetchColumn());
+		
 		if ($res->fetchColumn()) {
 			return true;
 		}
@@ -86,7 +84,7 @@ Class Model_User extends Model_Base {
 		$res->execute();
 
 		$user = $res->fetch();
-		var_dump($user);
+		
 		if (password_verify($password, $user["password"])) {
 			return $user["id"];
 		}
@@ -98,4 +96,35 @@ Class Model_User extends Model_Base {
 		$_SESSION["user"] = $userId;
 	}
 
+	public static function checkLog() {
+		if (isset($_SESSION["user"])) {
+			return $_SESSION["user"];
+		}
+	}
+
+	public static function getUserById($userId) {
+		$pdo = Db::getConnection();
+
+		$sql = "SELECT id, name, email, password, role FROM users WHERE id = :userId";
+
+		$res = $pdo->prepare($sql);
+		$res->bindParam(":userId", $userId, PDO::PARAM_STR);
+
+		$res->execute();
+
+		return $res->fetch(PDO::FETCH_ASSOC);
+	}
+
+	public static function edit($userId, $name, $password) {
+		$pdo = Db::getConnection();
+
+		$sql = "UPDATE users SET name = :name, password = :password WHERE id = :userId";
+
+		$res = $pdo->prepare($sql);
+		$res->bindParam(":name", $name, PDO::PARAM_STR);
+		$res->bindParam(":password", $password, PDO::PARAM_STR);
+		$res->bindParam(":userId", $userId, PDO::PARAM_STR);
+
+		return $res->execute();
+	}
 }

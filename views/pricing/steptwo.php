@@ -51,7 +51,7 @@ require_once(SITE_PATH . "/views/parts/header.php");
 				</p>
 				<label>
 					<!-- <div id="profile_euroline-styler" class="jq-radio checked" unselectable="on" style="user-select: none; display: inline-block; position: relative;"><input type="radio" id="profile_euroline" name="profile" value="euroline" checked="checked" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-radio__div"></div></div> -->
-					<input type="radio" id="profile_euroline" name="radio" value="profile_euroline" class="radio" checked="checked" />
+					<input type="radio" id="profile_euroline" name="radio" value="euroline" class="radio" checked="checked" />
 					<label for="profile_euroline" style="width: 0"></label>
 					<span>Выбрать</span>
 				</label>
@@ -66,7 +66,7 @@ require_once(SITE_PATH . "/views/parts/header.php");
 				</p>
 				<label>
 					<!-- <div id="profile_softline-styler" class="jq-radio" unselectable="on" style="user-select: none; display: inline-block; position: relative;"><input type="radio" id="profile_softline" name="profile" value="softline" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-radio__div"></div></div> -->
-					<input type="radio" id="profile_softline" name="radio" value="profile_softline" class="radio" />
+					<input type="radio" id="profile_softline" name="radio" value="softline" class="radio" />
 					<label for="profile_softline" style="width: 0"></label>
 					<span>Выбрать</span>
 				</label>
@@ -81,7 +81,7 @@ require_once(SITE_PATH . "/views/parts/header.php");
 				</p>
 				<label>
 					<!-- <div id="profile_softline82-styler" class="jq-radio" unselectable="on" style="user-select: none; display: inline-block; position: relative;"><input type="radio" id="profile_softline82" name="profile" value="softline82" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-radio__div"></div></div> -->
-					<input type="radio" id="profile_softline82" name="radio" value="profile_softline82" class="radio" />
+					<input type="radio" id="profile_softline82" name="radio" value="softline82" class="radio" />
 					<label for="profile_softline82" style="width: 0"></label>
 					<span>Выбрать</span>
 				</label>

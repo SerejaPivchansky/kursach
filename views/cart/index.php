@@ -4,7 +4,7 @@ include (SITE_PATH . '/views/parts/header.php');
 <section>
     <div class="container">
         <!--left sidebar-->
-        <div class="sidebar">
+        <!-- <div class="sidebar">
             <h2>Категории</h2>
             <ul class="left_sidebar">
                 <?php foreach ($categories as $catItem): ?>
@@ -13,7 +13,7 @@ include (SITE_PATH . '/views/parts/header.php');
                         </a></li>
                 <?php endforeach; ?>
             </ul>
-        </div>
+        </div> -->
         <!--main content-->
         <div class="content">
             <?php if($productsInCart):?>
@@ -64,5 +64,5 @@ include (SITE_PATH . '/views/parts/header.php');
 </section>
 <div class="appendix"></div>
 <?php
-include (ROOT . '/views/parts/footer.php');
+include (SITE_PATH . '/views/parts/footer.php');
 ?>

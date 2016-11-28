@@ -217,7 +217,7 @@ function getSizeTypeColor(tp) {
         jQuery(".type-item.selected .subitem-img-container").removeClass("selected");
         jQuery(".construction-types div[data-type="+t+"][data-sizes="+s+"]").addClass("selected");
         jQuery(".construction-image-wrapper img").attr("data-type",t);
-        jQuery(".construction-image-wrapper img").attr("src", "/calc/img/plastic/"+c+"/" +t+ ".jpg");
+        jQuery(".construction-image-wrapper img").attr("src", "/template/images/"+c+"/" +t+ ".jpg");
         if(typeof s != "undefined"){
             var ar=sizes[tp][s][t];
         }
@@ -357,7 +357,7 @@ jQuery(document).ready(function(){
        if(jQuery(this).attr("data-type")) {
            t=jQuery(this).attr("data-type");
            jQuery(".construction-image-wrapper img").attr("data-type",t);
-           jQuery(".construction-image-wrapper img").attr("src", "/calc/img/plastic/"+jQuery(".construction-image-wrapper img").attr("data-color")+"/" + jQuery(this).attr("data-type") + ".jpg");
+           jQuery(".construction-image-wrapper img").attr("src", "/template/images/"+jQuery(".construction-image-wrapper img").attr("data-color")+"/" + jQuery(this).attr("data-type") + ".jpg");
 
            if(t!="t1"&&t!="s1"&&t!="d1"&&t!="b")
                jQuery(".property-block.povorot").css("display","block");

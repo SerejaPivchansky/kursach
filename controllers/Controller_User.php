@@ -34,7 +34,7 @@ Class Controller_User extends Controller_Base {
 			if (!Model_User::checkPassword($password)) {
 				$errors[] = "Пароль не может быть короче шести символов";
 			}
-			//var_dump($errors);
+			
 			if ($errors == false) {
 				$res = Model_User::register($name, $email, password_hash($password, PASSWORD_DEFAULT));
 			}
@@ -68,11 +68,18 @@ Class Controller_User extends Controller_Base {
 			} else {
 				Model_User::auth($userId); // Записываем поле в сессию
 
-				header("Location : /cabinet/"); //Перенаправляем в личный кабинет
+				header('Location: /cabinet/'); //Перенаправляем в личный кабинет
 			}
 		}
 
 		require_once(SITE_PATH . "/views/user/login.php");
+
+		return true;
+	}
+
+	public function logout() {
+		unset($_SESSION["user"]);
+		header("Location: /");
 
 		return true;
 	}

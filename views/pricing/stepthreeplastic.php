@@ -25,51 +25,51 @@ require_once(SITE_PATH . "/views/parts/header.php");
 			</a>
 		</div>
         <div class="step-container">
-            <form action="http://www.oknarosta.ru/calc/" id="form" method="POST">
+            <form action="<?php SITE_PATH?>/pricing/stepfour" id="form" method="POST">
                 <input type="hidden" name="glazing" value="plastic">
-                <h2 class="aleft">Âûáåðèòå òèï îêîííîé êîíñòðóêöèè</h2>
-                <div class="window-construction-selector plastic_section">
+                <h2 class="aleft">ВЫБЕРИТЕ ТИП ОКОННОЙ КОНСТРУКЦИИ</h2>
+                <div class="window-construction-selector plastic_section" style="height: 657px">
                     <div class="left-col">
-                        <a href="http://www.oknarosta.ru/calc/unique.php" class="other-type">
-                            <span>Íóæåí äðóãîé</span><br><span>òèï îêíà?</span>
+                        <a href="" class="other-type">
+                            <span>Нужен другой</span><br><span>Тип окна?</span>
                         </a>
                         <div class="construction-types plastic ajustblock">
                             <input type="hidden" value="" name="construct_type">
                             <div class="type-item selected">
-                                <div class="img-container"><img src="./Êàëüêóëÿòîð îñòåêëåíèÿ _ âûáîð òèïà îêîííîé êîíñòðóêöèè_files/12.png"></div>
+                                <div class="img-container"><img src="<?php SITE_PATH?>/template/images/12.png"></div>
                                 <div class="subitems ajustblock">
-                                    <div class="subitem-img-container img-container" data-sizes="0" data-type="s1"><img src="./Êàëüêóëÿòîð îñòåêëåíèÿ _ âûáîð òèïà îêîííîé êîíñòðóêöèè_files/11.png"></div>
-                                    <div class="subitem-img-container img-container selected" data-sizes="0" data-type="s2"><img src="./Êàëüêóëÿòîð îñòåêëåíèÿ _ âûáîð òèïà îêîííîé êîíñòðóêöèè_files/12.png"></div>
+                                    <div class="subitem-img-container img-container" data-sizes="0" data-type="s1"><img src="<?php SITE_PATH?>/template/images/11.png"></div>
+                                    <div class="subitem-img-container img-container selected" data-sizes="0" data-type="s2"><img src="<?php SITE_PATH?>/template/images/12.png"></div>
                                     <div class="subitems-arrow"></div>
                                     <div class="subitems-arrow-top"></div>
                                 </div>
                             </div>
                             <div class="type-item">
-                                <div class="img-container"><img src="./Êàëüêóëÿòîð îñòåêëåíèÿ _ âûáîð òèïà îêîííîé êîíñòðóêöèè_files/21.png"></div>
+                                <div class="img-container"><img src="<?php SITE_PATH?>/template/images/21.png"></div>
                                 <div class="subitems ajustblock">
-                                    <div class="subitem-img-container selected img-container" data-sizes="1" data-type="d1"><img src="./Êàëüêóëÿòîð îñòåêëåíèÿ _ âûáîð òèïà îêîííîé êîíñòðóêöèè_files/21.png"></div>
-                                    <div class="subitem-img-container img-container" data-sizes="1" data-type="d2"><img src="./Êàëüêóëÿòîð îñòåêëåíèÿ _ âûáîð òèïà îêîííîé êîíñòðóêöèè_files/22.png"></div>
-                                    <div class="subitem-img-container img-container" data-sizes="1" data-type="d3"><img src="./Êàëüêóëÿòîð îñòåêëåíèÿ _ âûáîð òèïà îêîííîé êîíñòðóêöèè_files/23.png"></div>
+                                    <div class="subitem-img-container selected img-container" data-sizes="1" data-type="d1"><img src="<?php SITE_PATH?>/template/images/21.png"></div>
+                                    <div class="subitem-img-container img-container" data-sizes="1" data-type="d2"><img src="<?php SITE_PATH?>/template/images/22.png"></div>
+                                    <div class="subitem-img-container img-container" data-sizes="1" data-type="d3"><img src="<?php SITE_PATH?>/template/images/23.png"></div>
                                     <div class="subitems-arrow"></div>
                                     <div class="subitems-arrow-top"></div>
                                 </div>
                             </div>
                             <div class="type-item">
-                                <div class="img-container"><img src="./Êàëüêóëÿòîð îñòåêëåíèÿ _ âûáîð òèïà îêîííîé êîíñòðóêöèè_files/31.png"></div>
+                                <div class="img-container"><img src="<?php SITE_PATH?>/template/images/31.png"></div>
                                 <div class="subitems ajustblock">
-                                    <div class="subitem-img-container selected img-container" data-sizes="2" data-type="t1"><img src="./Êàëüêóëÿòîð îñòåêëåíèÿ _ âûáîð òèïà îêîííîé êîíñòðóêöèè_files/31.png"></div>
-                                    <div class="subitem-img-container img-container" data-sizes="2" data-type="t2"><img src="./Êàëüêóëÿòîð îñòåêëåíèÿ _ âûáîð òèïà îêîííîé êîíñòðóêöèè_files/32.png"></div>
-                                    <div class="subitem-img-container img-container" data-sizes="2" data-type="t3"><img src="./Êàëüêóëÿòîð îñòåêëåíèÿ _ âûáîð òèïà îêîííîé êîíñòðóêöèè_files/33.png"></div>
-                                    <div class="subitem-img-container img-container" data-sizes="2" data-type="t4"><img src="./Êàëüêóëÿòîð îñòåêëåíèÿ _ âûáîð òèïà îêîííîé êîíñòðóêöèè_files/34.png"></div>
+                                    <div class="subitem-img-container selected img-container" data-sizes="2" data-type="t1"><img src="<?php SITE_PATH?>/template/images/31.png"></div>
+                                    <div class="subitem-img-container img-container" data-sizes="2" data-type="t2"><img src="<?php SITE_PATH?>/template/images/32.png"></div>
+                                    <div class="subitem-img-container img-container" data-sizes="2" data-type="t3"><img src="<?php SITE_PATH?>/template/images/33.png"></div>
+                                    <div class="subitem-img-container img-container" data-sizes="2" data-type="t4"><img src="<?php SITE_PATH?>/template/images/34.png"></div>
                                     <div class="subitems-arrow"></div>
                                     <div class="subitems-arrow-top"></div>
                                 </div>
                             </div>
                             <div class="type-item">
-                                <div class="img-container selected" data-sizes="3" data-type="b"><img src="./Êàëüêóëÿòîð îñòåêëåíèÿ _ âûáîð òèïà îêîííîé êîíñòðóêöèè_files/41.png"></div>
+                                <div class="img-container selected" data-sizes="3" data-type="b"><img src="<?php SITE_PATH?>/template/images/41.png"></div>
                             </div>
                             <input type="hidden" name="plastic-size" value="0">
-                            <input type="hidden" name="plastic-type" value="s2">
+                            <input type="hidden" name="window-type" value="s2">
                         </div>
                         <div class="window-sizes">
                             <table border="0" width="100%">
@@ -80,7 +80,7 @@ require_once(SITE_PATH . "/views/parts/header.php");
                                         <div class="max">2600 max</div>
                                     </td>
                                     <td class="construction-image-wrapper">
-                                        <img src="./Êàëüêóëÿòîð îñòåêëåíèÿ _ âûáîð òèïà îêîííîé êîíñòðóêöèè_files/s2.jpg" data-type="s2" data-color="0" width="310" alt="">
+                                        <img src="<?php SITE_PATH?>/template/images/s2.jpg" data-type="s2" data-color="0" width="310" alt="">
                                     </td>
                                 </tr>
                                 <tr>
@@ -92,9 +92,9 @@ require_once(SITE_PATH . "/views/parts/header.php");
                                 </tr>
                             </tbody></table>
                             <div class="sizes-inputs">
-                                <input type="text" name="plastic-width" value="2000 ìì" id="size-width">
-                                <span class="multiply-sign">Õ</span>
-                                <input type="text" name="plastic-height" value="1750 ìì" id="size-height">
+                                <input type="text" name="window-width" value="2000 ìì" id="size-width">
+                                <span class="multiply-sign">X</span>
+                                <input type="text" name="window-height" value="1750 ìì" id="size-height">
                             </div>
                         </div>
                     </div>
@@ -103,9 +103,9 @@ require_once(SITE_PATH . "/views/parts/header.php");
                             <div class="construction-types-title">
                                 <span class="faq">?</span>
                                 <div class="faq-text">
-                                    Âñå ÏÂÕ-ñèñòåìû îáðàçîâàíû òîíêîñòåííûìè ïîëûìè ïðîôèëÿìè (îñíîâíûìè è äîïîëíèòåëüíûìè), èìåþùèìè íåñêîëüêî êàìåð, çàïîëíåííûõ âîçäóõîì èëè òåïëîèçîëÿöèîííûì ìàòåðèàëîì ñ íèçêèì êîýôôèöèåíòîì ïåðåäà÷è. Ñ óâåëè÷åíèåì ÷èñëà êàìåð è øèðèíû ïðîôèëÿ ðàñòåò çíà÷åíèå òåðìè÷åñêîãî ñîïðîòèâëåíèÿ ïðîôèëÿ è åãî æåñòêîñòü. Òîëùèíà ñòåíîê ïðîôèëÿ, â çàâèñèìîñòè îò ðàñïîëîæåíèÿ, ñîñòàâëÿåò: îêîëî 1,5 ìì (ïåðåãîðîäêè), îêîëî 3 ìì (íàðóæíûé).
+                                    Все ПВХ-системы образованы тонкостенными полыми профилями (основными и дополнительными), имеющими несколько камер, заполненных воздухом или теплоизоляционным материалом с низким коэффициентом передачи. С увеличением числа камер и ширины профиля растет значение термического сопротивления профиля и его жесткость. Толщина стенок профиля, в зависимости от расположения, составляет: около 1,5 мм (перегородки), около 3 мм (наружный).
                                 </div>
-                                Ïðîôèëüíàÿ ñèñòåìà VEKA
+                                Профильная система VEKA
                             </div>
                             <div class="profile-system-selector ajustblock">
                                 <div class="profile-system-item selected" id="euroline"><span>Euroline</span></div>
@@ -118,113 +118,132 @@ require_once(SITE_PATH . "/views/parts/header.php");
                             <div class="construction-types-title">
                                 <span class="faq">?</span>
                                 <div class="faq-text">
-                                    Ïîâîðîòíî-îòêèäíàÿ ôóðíèòóðà – ýòî ñèñòåìà ìåõàíèçìîâ, îáåñïå÷èâàþùàÿ ïðîñòûì âðàùåíèåì îêîííîé ðó÷êè íåñêîëüêî âàðèàíòîâ îòêðûâàíèÿ ñòâîðêè îêíà:
+                                    
+                                    Поворотно-откидная фурнитура – это система механизмов, обеспечивающая простым вращением оконной ручки несколько вариантов открывания створки окна:
+                                    
                                     <br><br>
-                                    1) ïîâîðîò ñòâîðêè îòíîñèòåëüíî âåðòèêàëüíîé îñè (êàê íà ïîâîðîòíîé ôóðíèòóðå)
+                                    
+                                    1) поворот створки относительно вертикальной оси (как на поворотной фурнитуре)
+                                    
                                     <br>
-                                    2) îòêèäûâàíèå ñòâîðêè îòíîñèòåëüíî ãîðèçîíòàëüíîé îñè (êàê ôðàìóãà)
+                                    
+                                    2) откидывание створки относительно горизонтальной оси (как фрамуга)
+                                    
                                     <br>
-                                    3) îòêèäûâàíèå ñòâîðêè îòíîñèòåëüíî ãîðèçîíòàëüíîé îñè â ðåæèìå ìèêðîïðîâåòðèâàíèÿ (ìèêðîâåíòèëÿöèÿ)
+                                    
+                                    3) откидывание створки относительно горизонтальной оси в режиме микропроветривания (микровентиляция)
+                                
                                 </div>
-                                Ïîâîðîòíî-îòêèäíîé ìåõàíèçì îòêðûâàíèÿ îêíà
+                                
+                                Поворотно-откидной механизм открывания окна
+                            
                             </div>
                             <div class="yes-no-button no">
-                                <label class="no"><input type="radio" name="plastic-povorot" value="N" checked="checked">Íåò</label>
-                                <label class="yes"><input type="radio" name="plastic-povorot" value="Y">Äà</label>
+                                <label class="no"><input type="radio" name="povorot" value="N" checked="checked">Нет</label>
+                                <label class="yes"><input type="radio" name="povorot" value="Y">Да</label>
                                 <div class="mover"></div>
                             </div>
                         </div>
-                        <div class="property-block plastic">
+                        <!-- <div class="property-block plastic">
                             <div class="construction-types-title">
                                 <span class="faq">?</span>
                                 <div class="faq-text">
-                                    Ëàìèíàöèÿ ïðîôèëÿ ÏÂÕ – ýòî ïðîöåññ íàíåñåíèÿ íà åãî ïðîãðóíòîâàííóþ ïîâåðõíîñòü äåêîðàòèâíîé âûñîêîïðî÷íîé àêðèëîâîé ïëåíêè ñ èñïîëüçîâàíèåì ïîëèóðåòàíîâîãî ïëàâêîãî êëåÿ è ëàìèíèðóþùèõ ìàøèí ñ âàëèêàìè.
+                                    
+                                    Ламинация профиля ПВХ – это процесс нанесения на его прогрунтованную поверхность декоративной высокопрочной акриловой пленки с использованием полиуретанового плавкого клея и ламинирующих машин с валиками.
+                                    
                                     <br><br>
-                                    Ïëåíêà î÷åíü ïðî÷íî ñîåäèíÿåòñÿ ñ ïðîôèëåì, ïîâåðõíîñòü ïîëó÷àåòñÿ èäåàëüíî ðîâíàÿ. Ëàìèíàöèþ ìîæíî ïðîèçâîäèòü è ñ îäíîé, è ñ äâóõ ñòîðîí. Êðîìå òîãî, ëàìèíàöèÿ ìîæåò ïðîèçâîäèòüñÿ êàê ñ ïðèìåíåíèåì áåëîãî ïðîôèëÿ, òàê è öâåòíîãî (òåõíîëîãèÿ ëàìèíèðîâàíèÿ ïðîôèëÿ â ìàññå). Ëàìèíàöèÿ ÏÂÕ-ïðîôèëÿ äàåò øèðîêèé âûáîð ðàñöâåòîê ïîâåðõíîñòè ïëàñòèêîâûõ èëè àëþìèíèåâûõ ïðîôèëåé: îò îäíîòîííûõ öâåòîâ è äåêîðîâ ïîä äåðåâî äî ðàçíîîáðàçíîãî òèñíåíèÿ.
+                                    
+                                    Пленка очень прочно соединяется с профилем, поверхность получается идеально ровная. Ламинацию можно производить и с одной, и с двух сторон. Кроме того, ламинация может производиться как с применением белого профиля, так и цветного (технология ламинирования профиля в массе). Ламинация ПВХ-профиля дает широкий выбор расцветок поверхности пластиковых или алюминиевых профилей: от однотонных цветов и декоров под дерево до разнообразного тиснения.
+                                
                                 </div>
-                                Ëàìèíàöèÿ
+                                Ламинация
                             </div>
                             <div class="yes-no-button lamination no">
-                                <label class="no"><input type="radio" value="N" name="plastic-lamination" checked="checked">Íåò</label>
-                                <label class="yes"><input type="radio" value="Y" name="plastic-lamination">Äà</label>
+                                <label class="no"><input type="radio" value="N" name="plastic-lamination" checked="checked">Нет</label>
+                                <label class="yes"><input type="radio" value="Y" name="plastic-lamination">Да</label>
                                 <div class="mover"></div>
                             </div>
                             <div class="lamination-block" style="display: none;">
                                 <div class="lamination-selector fr inner">
-                                    <label class="inner"><div class="jq-radio checked" unselectable="on" style="user-select: none; display: inline-block; position: relative;"><input type="radio" value="inner" name="plastic-lamination-type" checked="checked" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-radio__div"></div></div><span>Âíóòðåííÿÿ</span></label>
-                                    <label class="outer"><div class="jq-radio" unselectable="on" style="user-select: none; display: inline-block; position: relative;"><input type="radio" value="outer" name="plastic-lamination-type" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-radio__div"></div></div><span>Íàðóæíàÿ</span></label>
-                                    <label class="double"><div class="jq-radio" unselectable="on" style="user-select: none; display: inline-block; position: relative;"><input type="radio" value="double" name="plastic-lamination-type" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-radio__div"></div></div><span>Äâóñòîðîííÿÿ</span></label>
+                                    <label class="inner"><div class="jq-radio checked" unselectable="on" style="user-select: none; display: inline-block; position: relative;"><input type="radio" value="inner" name="plastic-lamination-type" checked="checked" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-radio__div"></div></div><span>Внутренняя</span></label>
+                                    <label class="outer"><div class="jq-radio" unselectable="on" style="user-select: none; display: inline-block; position: relative;"><input type="radio" value="outer" name="plastic-lamination-type" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-radio__div"></div></div><span>Наружная</span></label>
+                                    <label class="double"><div class="jq-radio" unselectable="on" style="user-select: none; display: inline-block; position: relative;"><input type="radio" value="double" name="plastic-lamination-type" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-radio__div"></div></div><span>Двусторонняя</span></label>
                                     <div class="mover" style="width: 103px;"></div>
                                 </div>
                                 <div class="clear"></div>
                                 <div class="material-items-selector plastic">
                                     <div class="material-item  selected" title="Ñâåòëûé äóá">
-                                        <img src="./Êàëüêóëÿòîð îñòåêëåíèÿ _ âûáîð òèïà îêîííîé êîíñòðóêöèè_files/lamination_1.png" width="60" height="60" alt="">
+                                        <img src="<?php SITE_PATH?>/template/images/lamination_1.png" width="60" height="60" alt="">
                                         <div class="jq-radio checked" unselectable="on" style="user-select: none; display: inline-block; position: relative;"><input type="radio" name="plastic-lamination-color" value="1" checked="checked" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-radio__div"></div></div>
                                     </div>
                                     <div class="material-item " title="Ìàõàãîí">
-                                        <img src="./Êàëüêóëÿòîð îñòåêëåíèÿ _ âûáîð òèïà îêîííîé êîíñòðóêöèè_files/lamination_2.png" width="60" height="60" alt="">
+                                        <img src="<?php SITE_PATH?>/template/images/lamination_2.png" width="60" height="60" alt="">
                                         <div class="jq-radio" unselectable="on" style="user-select: none; display: inline-block; position: relative;"><input type="radio" name="plastic-lamination-color" value="2" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-radio__div"></div></div>
                                     </div>
                                     <div class="material-item " title="Çîëîòîé äóá">
-                                        <img src="./Êàëüêóëÿòîð îñòåêëåíèÿ _ âûáîð òèïà îêîííîé êîíñòðóêöèè_files/lamination_3.png" width="60" height="60" alt="">
+                                        <img src="<?php SITE_PATH?>/template/images/lamination_3.png" width="60" height="60" alt="">
                                         <div class="jq-radio" unselectable="on" style="user-select: none; display: inline-block; position: relative;"><input type="radio" name="plastic-lamination-color" value="3" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-radio__div"></div></div>
                                     </div>
                                     <div class="material-item " title="Ñâåòëî-êðàñíûé">
-                                        <img src="./Êàëüêóëÿòîð îñòåêëåíèÿ _ âûáîð òèïà îêîííîé êîíñòðóêöèè_files/lamination_4.png" width="60" height="60" alt="">
+                                        <img src="<?php SITE_PATH?>/template/images/lamination_4.png" width="60" height="60" alt="">
                                         <div class="jq-radio" unselectable="on" style="user-select: none; display: inline-block; position: relative;"><input type="radio" name="plastic-lamination-color" value="4" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-radio__div"></div></div>
                                     </div>
                                     <div class="material-item " title="Òåìíî-êðàñíûé">
-                                        <img src="./Êàëüêóëÿòîð îñòåêëåíèÿ _ âûáîð òèïà îêîííîé êîíñòðóêöèè_files/lamination_5.png" width="60" height="60" alt="">
+                                        <img src="<?php SITE_PATH?>/template/images/lamination_5.png" width="60" height="60" alt="">
                                         <div class="jq-radio" unselectable="on" style="user-select: none; display: inline-block; position: relative;"><input type="radio" name="plastic-lamination-color" value="5" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-radio__div"></div></div>
                                     </div>
                                     <div class="material-item " title="Íàòóðàëüíûé äóá">
-                                        <img src="./Êàëüêóëÿòîð îñòåêëåíèÿ _ âûáîð òèïà îêîííîé êîíñòðóêöèè_files/lamination_6.png" width="60" height="60" alt="">
+                                        <img src="<?php SITE_PATH?>/template/images/lamination_6.png" width="60" height="60" alt="">
                                         <div class="jq-radio" unselectable="on" style="user-select: none; display: inline-block; position: relative;"><input type="radio" name="plastic-lamination-color" value="6" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-radio__div"></div></div>
                                     </div>
                                     <div class="material-item " title="Ðóñòèêàëüíûé äóá">
-                                        <img src="./Êàëüêóëÿòîð îñòåêëåíèÿ _ âûáîð òèïà îêîííîé êîíñòðóêöèè_files/lamination_7.png" width="60" height="60" alt="">
+                                        <img src="<?php SITE_PATH?>/template/images/lamination_7.png" width="60" height="60" alt="">
                                         <div class="jq-radio" unselectable="on" style="user-select: none; display: inline-block; position: relative;"><input type="radio" name="plastic-lamination-color" value="7" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-radio__div"></div></div>
                                     </div>
                                     <div class="material-item " title="Äóá">
-                                        <img src="./Êàëüêóëÿòîð îñòåêëåíèÿ _ âûáîð òèïà îêîííîé êîíñòðóêöèè_files/lamination_8.png" width="60" height="60" alt="">
+                                        <img src="<?php SITE_PATH?>/template/images/lamination_8.png" width="60" height="60" alt="">
                                         <div class="jq-radio" unselectable="on" style="user-select: none; display: inline-block; position: relative;"><input type="radio" name="plastic-lamination-color" value="8" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-radio__div"></div></div>
                                     </div>
                                     <div class="material-item " title="Òåìíûé äóá">
-                                        <img src="./Êàëüêóëÿòîð îñòåêëåíèÿ _ âûáîð òèïà îêîííîé êîíñòðóêöèè_files/lamination_9.png" width="60" height="60" alt="">
+                                        <img src="<?php SITE_PATH?>/template/images/lamination_9.png" width="60" height="60" alt="">
                                         <div class="jq-radio" unselectable="on" style="user-select: none; display: inline-block; position: relative;"><input type="radio" name="plastic-lamination-color" value="9" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-radio__div"></div></div>
                                     </div>
                                     <div class="material-item " title="Èçóìðóäíî-çåëåíûé">
-                                        <img src="./Êàëüêóëÿòîð îñòåêëåíèÿ _ âûáîð òèïà îêîííîé êîíñòðóêöèè_files/lamination_10.png" width="60" height="60" alt="">
+                                        <img src="<?php SITE_PATH?>/template/images/lamination_10.png" width="60" height="60" alt="">
                                         <div class="jq-radio" unselectable="on" style="user-select: none; display: inline-block; position: relative;"><input type="radio" name="plastic-lamination-color" value="10" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-radio__div"></div></div>
                                     </div>
                                     <div class="material-item " title="Ñåðûé">
-                                        <img src="./Êàëüêóëÿòîð îñòåêëåíèÿ _ âûáîð òèïà îêîííîé êîíñòðóêöèè_files/lamination_11.png" width="60" height="60" alt="">
+                                        <img src="<?php SITE_PATH?>/template/images/lamination_11.png" width="60" height="60" alt="">
                                         <div class="jq-radio" unselectable="on" style="user-select: none; display: inline-block; position: relative;"><input type="radio" name="plastic-lamination-color" value="11" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-radio__div"></div></div>
                                     </div>
                                     <div class="material-item " title="Øîêîëàäíî-êîðè÷íåâûé">
-                                        <img src="./Êàëüêóëÿòîð îñòåêëåíèÿ _ âûáîð òèïà îêîííîé êîíñòðóêöèè_files/lamination_12.png" width="60" height="60" alt="">
+                                        <img src="<?php SITE_PATH?>/template/images/lamination_12.png" width="60" height="60" alt="">
                                         <div class="jq-radio" unselectable="on" style="user-select: none; display: inline-block; position: relative;"><input type="radio" name="plastic-lamination-color" value="12" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-radio__div"></div></div>
                                     </div>
                                     <div class="material-item " title="Ñòàëüíîé ñèíèé">
-                                        <img src="./Êàëüêóëÿòîð îñòåêëåíèÿ _ âûáîð òèïà îêîííîé êîíñòðóêöèè_files/lamination_13.png" width="60" height="60" alt="">
+                                        <img src="<?php SITE_PATH?>/template/images/lamination_13.png" width="60" height="60" alt="">
                                         <div class="jq-radio" unselectable="on" style="user-select: none; display: inline-block; position: relative;"><input type="radio" name="plastic-lamination-color" value="13" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-radio__div"></div></div>
                                     </div>
                                     <div class="material-item " title="Áðèëëèàíò ñèíèé">
-                                        <img src="./Êàëüêóëÿòîð îñòåêëåíèÿ _ âûáîð òèïà îêîííîé êîíñòðóêöèè_files/lamination_14.png" width="60" height="60" alt="">
+                                        <img src="<?php SITE_PATH?>/template/images/lamination_14.png" width="60" height="60" alt="">
                                         <div class="jq-radio" unselectable="on" style="user-select: none; display: inline-block; position: relative;"><input type="radio" name="plastic-lamination-color" value="14" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-radio__div"></div></div>
                                     </div>
                                     <input type="hidden" name="plastic-lamination-color-name" value="Ñâåòëûé äóá">
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="clear"></div>
                 </div>
                 <div class="next-prev-wrapper">
-                    <a class="step-button prev" href="http://www.oknarosta.ru/calc/?backwards=true">Ïðåäûäóùèé øàã</a>
-                    <input type="submit" name="forward" class="step-button next" value="Ñëåäóþùèé øàã">                </div>
+                    <a class="step-button prev" href="http://www.oknarosta.ru/calc/?backwards=true">Предыдущий шаг</a>
+                    <input type="submit" name="forward" class="step-button next" value="Следующий шаг">                </div>
             </form>
         </div>
 
     </div>
+
+
+<?php 
+require_once(SITE_PATH . "/views/parts/footer.php");
+?>
